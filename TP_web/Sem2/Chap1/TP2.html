@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TP2</title>
+	</head>
+	<body>
+		<h1>Ex1</h1>
+		<script type="text/javascript">
+		n = prompt("Donner N: ", 10);
+		p = 0;
+		document.write("<table width=50% cellpadding=10><tr>")
+			for(i=0;i<=10;i++){
+				document.write("<td>"+i+"</td>");
+			}
+		document.write("</tr></table><br>")
+		document.write("<table border=1 width=50%><tr>")
+			for (i = 0; i <= 10;i++){
+				p = n * i;
+				document.write("<td>"+p+"</td>");
+			}
+		document.write("</tr></table><br>")
+			
+		</script>
+		<h1>Ex2</h1>
+		<script type="text/javascript">
+			//////////////////////////
+			document.write("<h3>Avec un boucle while</h3>");
+			n = prompt("Combien d'operands?",0);
+			s = 0;
+			p = 1;
+			m = 0;
+			i = 0;
+			while(i<n){
+					nbre = prompt("Donner operand: ",0);
+					s = s + parseInt(nbre);
+					p *= parseInt(nbre);
+					i += 1;
+			};
+			m = s / n;
+			document.write("somme = "+s+" produit= "+p+" moyenne = "+m);
+		///////////////////////////////
+			document.write("<h3>Avec un boucle for</h3>");
+			for(i=1;i<=n;i++){
+				nbre = prompt("Donner operand: ",0);
+				s = s + parseInt(nbre);
+				p *= parseInt(nbre);
+			}
+			m = s / n;
+			document.write("somme = "+s+" produit= "+p+" moyenne = "+m);
+		</script>
+		<h1>Ex3</h1>
+		<script type="text/javascript">
+			n = prompt("Donner N",0);
+			var f;
+			if(n==0){
+			document.write("factorial = 0") ;
+			}
+			else if(n != 0){
+				f =1;
+				for(i=1;i <= n;i++){
+					f = f * i;
+				}
+				document.write("<br>factorial = ",f);
+			}
+		</script>
+		<h1>Ex4</h1>
+		<script type="text/javascript">
+				
+				givenDate = new Date(prompt("Donner une date: "));
+				day = givenDate.getDate()
+				mo  = givenDate.getMonth() + 1;
+				year= givenDate.getYear() + 1900;
+				document.write("Today: "+day +"/"+ mo +"/" +year);
+
+				day = day +1;
+
+				document.write("<br>Tommorrow: "+day +"/"+ mo +"/" +year);
+
+		</script>
+		<h1>Ex5</h1>
+		<script type="text/javascript">
+			opnd1 = prompt("donner 1er operand");
+			optr = prompt("donner operateur");
+			opnd2 = prompt("donner 2eme operand");
+			
+			if(optr == "+"){
+				result = parseInt(opnd1) + parseInt(opnd2S);
+				document.write(opnd1+optr+opnd2+" = "+result);
+			}
+			if(optr == "-"){
+				result = opnd1 - opnd2;
+				document.write(opnd1+optr+opnd2+" = "+result);
+			}
+			if(optr == "*"){
+				result = opnd1 * opnd2;
+				document.write(opnd1+optr+opnd2+" = "+result);
+			}
+			if(optr == "/"){
+				if(opnd2 == 0){
+					alert("Erreur! Division par 0!");
+				}
+				else{	
+				result = opnd1 / opnd2;
+				document.write(opnd1+optr+opnd2+" = "+result);
+				}
+			}
+		</script>
+		
+		</body>
+</html>

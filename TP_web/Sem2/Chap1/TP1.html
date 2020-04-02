@@ -1,0 +1,113 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script language="JavaScript">
+		document.write("<h1>EX1</h1>");
+		var nom = "Azhar";
+		var prenom = "Méchergui";
+		document.write("nom="+nom+"<br>"+"prenom="+prenom);
+		</script>
+
+		<center>
+		<script language = "Javascript" >
+		document.write("<h1>EX2</h1>");
+		img = "<img SRC=1.PNG HEIGHT=500px width=500px> <BR> <H1> Ma première image </H1>"
+		document.write(img);
+		</script>
+		</center>
+		</script>
+
+
+		<SCRIPT LANGUAGE="JavaScript">
+		somme=0;
+		nombre= 10;
+		for (i=1; i <=nombre ; i++)
+		somme=somme + i ;
+		document.write("La somme des premiers naturels jusqu'à " + nombre +
+		" est égale à " + somme+ "<BR>");
+		document.write( "Pour vérifier : ("+nombre+ " * "+(nombre+1)+" )/2 ="+somme);
+		</SCRIPT>
+
+		<SCRIPT language = "JavaScript" >
+			document.write("<h1>EX5</h1>");
+		x= new Date();
+		mois = x.getMonth() + 1;
+		jour = x.getDate() ;
+		annee = x.getYear() + 1900;
+		document.write( "Date de ce jour : " , jour, " / ", mois, " / "+annee+ "<BR>");
+		document.write( "l’Heure est "+ x.getHours(), " : "+x.getMinutes()+" : "+x.getSeconds() );
+		</SCRIPT>
+
+
+		<h1>EX7</h1>
+		<script type="text/javascript">
+		produit=1;
+		nombre= 7;
+		document.write("<center><table border=1 width=50% height=50% style=text-align:center;>")
+		for (i=0; i <10 ; i++){
+	
+			produit=nombre * i ;
+			document.write("<tr><td>7</td><td>x</td><td>"+i+"</td><td>=</td><td>"+produit+"</td></tr>");
+
+		}
+		document.write("</table></center>	");
+		</script>
+
+		<h1>EX8</h1>
+		<script type="text/javascript">
+		produit=1;
+		nombre= prompt("Donner un nombre: ",9);
+		document.write("<center><table border=1 width=50% height=50% style=text-align:center;>")
+		for (i=0; i <10 ; i++){
+	
+			produit=nombre * i ;
+			document.write("<tr><td>"+nombre+"</td><td>x</td><td>"+i+"</td><td>=</td><td>"+produit+"</td></tr>");
+
+		}
+		document.write("</table></center>	");
+		</script>
+		<h1>EX9</h1>
+		<script type="text/javascript">
+		nb_a = prompt("Donner a : ",0);
+		nb_b = prompt("Donner b : ",0);
+		if(nb_b==0){
+			if(nb_a==0){
+				document.write("Pas de solution!");
+			}else if(nb_a!=0 && nb_b==0){
+			document.write("X = 0");}
+		}
+		else{
+
+			x = -(nb_b/nb_a);
+			document.write("X = ",x);
+		};
+
+		</script>
+		<h1>ex10</h1>
+		<script type="text/JavaScript">
+			nb = prompt("donner nb:",5);
+			var f;
+			if(nb==0){
+			document.write("factorial = 0") ;
+
+			}
+			else if(nb != 0){
+				f =1;
+				for(i=1;i <= nb;i++){
+					f = f * i;
+				}
+			document.write("<br>",f);	
+			}
+
+		</script>
+		<h1>EX11</h1>
+		<script type="text/javascript">
+			date  = new Date();
+			jour  = date.getDate()
+			annee = date.getYear()+1900;
+			mins  = date.getMinutes();
+			document.write("<table border=1><tr><td>+"jour"+</td><td>+"annee"+</td><td>+"mins"+</td></tr></table>");
+		</script>
+	</body>
+</html>
